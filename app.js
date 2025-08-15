@@ -5,11 +5,12 @@ const routes = require('./routes');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
+// Middleware to parse JSON requests
 app.use(express.json());
+// Define API routes
 app.use('/api', routes);
 
-// Mongoose connection
+// Mongoose connection to MongoDB
 mongoose.connect('mongodb://localhost:27017/gold_management', {
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -19,6 +20,7 @@ mongoose.connect('mongodb://localhost:27017/gold_management', {
   console.error('MongoDB connection error:', err);
 });
 
+// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
