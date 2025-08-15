@@ -1,7 +1,7 @@
 {
   "name": "he-thong-quan-ly-bang-chu-khoan-vang",
   "version": "1.0.0",
-  "description": "Hệ thống quản lý giao dịch vàng trên blockchain.",
+  "description": "Hệ thống quản lý giao dịch vàng trên blockchain, bao gồm quản lý hợp đồng thông minh và tương tác với các ứng dụng phi tập trung.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
