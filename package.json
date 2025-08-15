@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",  // Start the application
     "test": "jest",  // Run tests using Jest
-    "pretest": "echo 'Running tests...'",  // Output before tests run
+    "pretest": "echo 'Running tests...'
+,    // Output before tests run
     "posttest": "echo 'Test complete.'"  // Output after tests complete
   },
   "dependencies": {
