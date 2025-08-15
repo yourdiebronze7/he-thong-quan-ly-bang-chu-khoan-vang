@@ -5,12 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo 'No tests specified' && exit 0"
+    "test": "jest", 
+    "pretest": "echo 'Running tests...'", 
+    "posttest": "echo 'Test complete.'"
   },
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.10.9",
     "truffle": "^5.1.0",
     "web3": "^1.3.6"
+  },
+  "devDependencies": {
+    "jest": "^26.6.0"
   }
 }
