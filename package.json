@@ -4,10 +4,10 @@
   "description": "Hệ thống quản lý giao dịch vàng trên blockchain, bao gồm quản lý hợp đồng thông minh và tương tác với các ứng dụng phi tập trung.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "jest", 
-    "pretest": "echo 'Running tests...'", 
-    "posttest": "echo 'Test complete.'"
+    "start": "node index.js",  // Start the application
+    "test": "jest",  // Run tests using Jest
+    "pretest": "echo 'Running tests...'",  // Output before tests run
+    "posttest": "echo 'Test complete.'"  // Output after tests complete
   },
   "dependencies": {
     "express": "^4.17.1",
