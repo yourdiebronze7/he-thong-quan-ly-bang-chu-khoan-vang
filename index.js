@@ -17,8 +17,15 @@ mongoose.connect('mongodb://localhost:27017/gold_management', {
   console.error('MongoDB connection error:', err);
 });
 
+// Root route
 app.get('/', (req, res) => {
   res.send('Chào mừng đến với hệ thống quản lý giao dịch vàng!');
+});
+
+// Error Handling Middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
 });
 
 app.listen(PORT, (err) => {
